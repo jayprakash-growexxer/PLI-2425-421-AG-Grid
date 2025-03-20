@@ -1,0 +1,16 @@
+<button (click)="onBtnExport()">Download CSV export file</button>
+<ag-grid-angular
+    style="width: 100%; height: 500px;"
+    class="ag-theme-alpine"
+    [rowData]="userList"
+    (gridReady)="onGridReady($event)"
+    [columnDefs]="columnDefs"
+    [defaultColDef]="defaultColDef"
+    [rowSelection]="rowSelection"
+    [rowMultiSelectWithClick]="true"
+    [animateRows]="true"
+    [pagination]="true"
+    [paginationPageSize]="5"
+    [paginationPageSizeSelector]="[5,10]"
+    >
+</ag-grid-angular>  
